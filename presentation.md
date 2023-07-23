@@ -1,4 +1,4 @@
-# JSON
+# JSONn
 
 ```javascript
 { "Books":
@@ -227,14 +227,14 @@ xmllint --valid --noout Bookstore-IDREFs.xml
 
 | DTD                                                                                                                | Описание                                                                                         |
 |------------------------------------------------------------------------------------------------------------------ |------------------------------------------------------------------------------------------------ |
-| <!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01//EN" "www.w3.org/TR/html4/strict.dtd">                               | Строгий синтаксис HTML.                                                                          |
-| <!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01 Transitional//EN" "www.w3.org/TR/html4/loose.dtd">                   | Переходный синтаксис HTML.                                                                       |
-| <!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01 Frameset//EN" "www.w3.org/TR/html4/frameset.dtd">                    | В HTML-документе применяются фреймы.                                                             |
-| <!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">            | Строгий синтаксис XHTML.                                                                         |
-| <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> | Переходный синтаксис XHTML.                                                                      |
-| <!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Frameset//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">        | Документ написан на XHTML и содержит фреймы.                                                     |
-| <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">                         | Никакого деления на виды это определение не имеет, синтаксис один и подчиняется четким правилам. |
-| <!DOCTYPE html>                                                                                                    | HTML5                                                                                            |
+| \<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01//EN" "www.w3.org/TR/html4/strict.dtd"\>                              | Строгий синтаксис HTML.                                                                          |
+| \<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01 Transitional//EN" "www.w3.org/TR/html4/loose.dtd"\>                   | Переходный синтаксис HTML.                                                                       |
+| \<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01 Frameset//EN" "www.w3.org/TR/html4/frameset.dtd"\>                    | В HTML-документе применяются фреймы.                                                             |
+| \<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"\>            | Строгий синтаксис XHTML.                                                                         |
+| \<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"\> | Переходный синтаксис XHTML.                                                                      |
+| \<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Frameset//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"\>        | Документ написан на XHTML и содержит фреймы.                                                     |
+| \<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"\>                         | Никакого деления на виды это определение не имеет, синтаксис один и подчиняется четким правилам. |
+| \<!DOCTYPE html\>                                                                                                    | HTML5                                                                                            |
 
 ```html
 <!DOCTYPE html>
@@ -350,7 +350,7 @@ json validate --schema-file BookstoreSchema.json --document-file Bookstore.json
 </html>
 ```
 
-![img](non_valid_html.png)  
+![img](non_valid_html.png)
 
 ```javascript
 var newParagraph = document.createElement("p");
@@ -359,7 +359,7 @@ newParagraph.appendChild(paragraphContent);
 document.body.appendChild(newParagraph);
 ```
 
-![img](dom.jpg)  
+![img](dom.jpg)
 
 ```python
 from xml.dom.minidom import parse
@@ -527,269 +527,269 @@ for event, node in event_stream:
 ```
 
 ```
-- START_DOCUMENT <xml.dom.minidom.Document object at 0x7fd87e271fa0>
-- START_ELEMENT <DOM Element: Bookstore at 0x7fd87ea921f0>
+- START_DOCUMENT <xml.dom.minidom.Document object at 0x7f63739d2fa0>
+- START_ELEMENT <DOM Element: Bookstore at 0x7f63741f21f0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- START_ELEMENT <DOM Element: Book at 0x7fd87e1b8940>
+- START_ELEMENT <DOM Element: Book at 0x7f6373918940>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Title at 0x7fd87e1b8af0>
+- START_ELEMENT <DOM Element: Title at 0x7f6373918af0>
 - CHARACTERS <DOM Text node "'A First Co'...">
-- END_ELEMENT <DOM Element: Title at 0x7fd87e1b8af0>
+- END_ELEMENT <DOM Element: Title at 0x7f6373918af0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Authors at 0x7fd87e1b8e50>
+- START_ELEMENT <DOM Element: Authors at 0x7f6373918e50>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- START_ELEMENT <DOM Element: Author at 0x7fd87e178dc0>
+- START_ELEMENT <DOM Element: Author at 0x7f63738d8dc0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: First_Name at 0x7fd87e178e50>
+- START_ELEMENT <DOM Element: First_Name at 0x7f63738d8e50>
 - CHARACTERS <DOM Text node "'Jeffrey'">
-- END_ELEMENT <DOM Element: First_Name at 0x7fd87e178e50>
+- END_ELEMENT <DOM Element: First_Name at 0x7f63738d8e50>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: Last_Name at 0x7fd87e178ee0>
+- START_ELEMENT <DOM Element: Last_Name at 0x7f63738d8ee0>
 - CHARACTERS <DOM Text node "'Ullman'">
-- END_ELEMENT <DOM Element: Last_Name at 0x7fd87e178ee0>
+- END_ELEMENT <DOM Element: Last_Name at 0x7f63738d8ee0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- END_ELEMENT <DOM Element: Author at 0x7fd87e178dc0>
+- END_ELEMENT <DOM Element: Author at 0x7f63738d8dc0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- START_ELEMENT <DOM Element: Author at 0x7fd87e178f70>
+- START_ELEMENT <DOM Element: Author at 0x7f63738d8f70>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: First_Name at 0x7fd87e179040>
+- START_ELEMENT <DOM Element: First_Name at 0x7f63738d9040>
 - CHARACTERS <DOM Text node "'Jennifer'">
-- END_ELEMENT <DOM Element: First_Name at 0x7fd87e179040>
+- END_ELEMENT <DOM Element: First_Name at 0x7f63738d9040>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: Last_Name at 0x7fd87e1790d0>
+- START_ELEMENT <DOM Element: Last_Name at 0x7f63738d90d0>
 - CHARACTERS <DOM Text node "'Widom'">
-- END_ELEMENT <DOM Element: Last_Name at 0x7fd87e1790d0>
+- END_ELEMENT <DOM Element: Last_Name at 0x7f63738d90d0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- END_ELEMENT <DOM Element: Author at 0x7fd87e178f70>
+- END_ELEMENT <DOM Element: Author at 0x7f63738d8f70>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- END_ELEMENT <DOM Element: Authors at 0x7fd87e1b8e50>
+- END_ELEMENT <DOM Element: Authors at 0x7f6373918e50>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- END_ELEMENT <DOM Element: Book at 0x7fd87e1b8940>
+- END_ELEMENT <DOM Element: Book at 0x7f6373918940>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- START_ELEMENT <DOM Element: Book at 0x7fd87e179160>
+- START_ELEMENT <DOM Element: Book at 0x7f63738d9160>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Title at 0x7fd87e1791f0>
+- START_ELEMENT <DOM Element: Title at 0x7f63738d91f0>
 - CHARACTERS <DOM Text node "'Database S'...">
-- END_ELEMENT <DOM Element: Title at 0x7fd87e1791f0>
+- END_ELEMENT <DOM Element: Title at 0x7f63738d91f0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Authors at 0x7fd87e179280>
+- START_ELEMENT <DOM Element: Authors at 0x7f63738d9280>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- START_ELEMENT <DOM Element: Author at 0x7fd87e179310>
+- START_ELEMENT <DOM Element: Author at 0x7f63738d9310>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: First_Name at 0x7fd87e1793a0>
+- START_ELEMENT <DOM Element: First_Name at 0x7f63738d93a0>
 - CHARACTERS <DOM Text node "'Hector'">
-- END_ELEMENT <DOM Element: First_Name at 0x7fd87e1793a0>
+- END_ELEMENT <DOM Element: First_Name at 0x7f63738d93a0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: Last_Name at 0x7fd87e179430>
+- START_ELEMENT <DOM Element: Last_Name at 0x7f63738d9430>
 - CHARACTERS <DOM Text node "'Garcia-Mol'...">
-- END_ELEMENT <DOM Element: Last_Name at 0x7fd87e179430>
+- END_ELEMENT <DOM Element: Last_Name at 0x7f63738d9430>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- END_ELEMENT <DOM Element: Author at 0x7fd87e179310>
+- END_ELEMENT <DOM Element: Author at 0x7f63738d9310>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- START_ELEMENT <DOM Element: Author at 0x7fd87e1794c0>
+- START_ELEMENT <DOM Element: Author at 0x7f63738d94c0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: First_Name at 0x7fd87e179550>
+- START_ELEMENT <DOM Element: First_Name at 0x7f63738d9550>
 - CHARACTERS <DOM Text node "'Jeffrey'">
-- END_ELEMENT <DOM Element: First_Name at 0x7fd87e179550>
+- END_ELEMENT <DOM Element: First_Name at 0x7f63738d9550>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: Last_Name at 0x7fd87e1795e0>
+- START_ELEMENT <DOM Element: Last_Name at 0x7f63738d95e0>
 - CHARACTERS <DOM Text node "'Ullman'">
-- END_ELEMENT <DOM Element: Last_Name at 0x7fd87e1795e0>
+- END_ELEMENT <DOM Element: Last_Name at 0x7f63738d95e0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- END_ELEMENT <DOM Element: Author at 0x7fd87e1794c0>
+- END_ELEMENT <DOM Element: Author at 0x7f63738d94c0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- START_ELEMENT <DOM Element: Author at 0x7fd87e179670>
+- START_ELEMENT <DOM Element: Author at 0x7f63738d9670>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: First_Name at 0x7fd87e179700>
+- START_ELEMENT <DOM Element: First_Name at 0x7f63738d9700>
 - CHARACTERS <DOM Text node "'Jennifer'">
-- END_ELEMENT <DOM Element: First_Name at 0x7fd87e179700>
+- END_ELEMENT <DOM Element: First_Name at 0x7f63738d9700>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: Last_Name at 0x7fd87e179790>
+- START_ELEMENT <DOM Element: Last_Name at 0x7f63738d9790>
 - CHARACTERS <DOM Text node "'Widom'">
-- END_ELEMENT <DOM Element: Last_Name at 0x7fd87e179790>
+- END_ELEMENT <DOM Element: Last_Name at 0x7f63738d9790>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- END_ELEMENT <DOM Element: Author at 0x7fd87e179670>
+- END_ELEMENT <DOM Element: Author at 0x7f63738d9670>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- END_ELEMENT <DOM Element: Authors at 0x7fd87e179280>
+- END_ELEMENT <DOM Element: Authors at 0x7f63738d9280>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Remark at 0x7fd87e179820>
+- START_ELEMENT <DOM Element: Remark at 0x7f63738d9820>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         B'...">
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- END_ELEMENT <DOM Element: Remark at 0x7fd87e179820>
+- END_ELEMENT <DOM Element: Remark at 0x7f63738d9820>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- END_ELEMENT <DOM Element: Book at 0x7fd87e179160>
+- END_ELEMENT <DOM Element: Book at 0x7f63738d9160>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- START_ELEMENT <DOM Element: Book at 0x7fd87e1798b0>
+- START_ELEMENT <DOM Element: Book at 0x7f63738d98b0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Title at 0x7fd87e179940>
+- START_ELEMENT <DOM Element: Title at 0x7f63738d9940>
 - CHARACTERS <DOM Text node "'Hector and'...">
-- END_ELEMENT <DOM Element: Title at 0x7fd87e179940>
+- END_ELEMENT <DOM Element: Title at 0x7f63738d9940>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Authors at 0x7fd87e1799d0>
+- START_ELEMENT <DOM Element: Authors at 0x7f63738d99d0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- START_ELEMENT <DOM Element: Author at 0x7fd87e179a60>
+- START_ELEMENT <DOM Element: Author at 0x7f63738d9a60>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: First_Name at 0x7fd87e179af0>
+- START_ELEMENT <DOM Element: First_Name at 0x7f63738d9af0>
 - CHARACTERS <DOM Text node "'Jeffrey'">
-- END_ELEMENT <DOM Element: First_Name at 0x7fd87e179af0>
+- END_ELEMENT <DOM Element: First_Name at 0x7f63738d9af0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: Last_Name at 0x7fd87e179b80>
+- START_ELEMENT <DOM Element: Last_Name at 0x7f63738d9b80>
 - CHARACTERS <DOM Text node "'Ullman'">
-- END_ELEMENT <DOM Element: Last_Name at 0x7fd87e179b80>
+- END_ELEMENT <DOM Element: Last_Name at 0x7f63738d9b80>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- END_ELEMENT <DOM Element: Author at 0x7fd87e179a60>
+- END_ELEMENT <DOM Element: Author at 0x7f63738d9a60>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- START_ELEMENT <DOM Element: Author at 0x7fd87e179c10>
+- START_ELEMENT <DOM Element: Author at 0x7f63738d9c10>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: First_Name at 0x7fd87e179ca0>
+- START_ELEMENT <DOM Element: First_Name at 0x7f63738d9ca0>
 - CHARACTERS <DOM Text node "'Hector'">
-- END_ELEMENT <DOM Element: First_Name at 0x7fd87e179ca0>
+- END_ELEMENT <DOM Element: First_Name at 0x7f63738d9ca0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: Last_Name at 0x7fd87e179d30>
+- START_ELEMENT <DOM Element: Last_Name at 0x7f63738d9d30>
 - CHARACTERS <DOM Text node "'Garcia-Mol'...">
-- END_ELEMENT <DOM Element: Last_Name at 0x7fd87e179d30>
+- END_ELEMENT <DOM Element: Last_Name at 0x7f63738d9d30>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- END_ELEMENT <DOM Element: Author at 0x7fd87e179c10>
+- END_ELEMENT <DOM Element: Author at 0x7f63738d9c10>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- END_ELEMENT <DOM Element: Authors at 0x7fd87e1799d0>
+- END_ELEMENT <DOM Element: Authors at 0x7f63738d99d0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Remark at 0x7fd87e179dc0>
+- START_ELEMENT <DOM Element: Remark at 0x7f63738d9dc0>
 - CHARACTERS <DOM Text node "'An indispe'...">
-- END_ELEMENT <DOM Element: Remark at 0x7fd87e179dc0>
+- END_ELEMENT <DOM Element: Remark at 0x7f63738d9dc0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- END_ELEMENT <DOM Element: Book at 0x7fd87e1798b0>
+- END_ELEMENT <DOM Element: Book at 0x7f63738d98b0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- START_ELEMENT <DOM Element: Book at 0x7fd87e179e50>
+- START_ELEMENT <DOM Element: Book at 0x7f63738d9e50>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Title at 0x7fd87e179ee0>
+- START_ELEMENT <DOM Element: Title at 0x7f63738d9ee0>
 - CHARACTERS <DOM Text node ""Jennifer's"...">
-- END_ELEMENT <DOM Element: Title at 0x7fd87e179ee0>
+- END_ELEMENT <DOM Element: Title at 0x7f63738d9ee0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- START_ELEMENT <DOM Element: Authors at 0x7fd87e179f70>
+- START_ELEMENT <DOM Element: Authors at 0x7f63738d9f70>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- START_ELEMENT <DOM Element: Author at 0x7fd87e185040>
+- START_ELEMENT <DOM Element: Author at 0x7f63738e5040>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: First_Name at 0x7fd87e1850d0>
+- START_ELEMENT <DOM Element: First_Name at 0x7f63738e50d0>
 - CHARACTERS <DOM Text node "'Jennifer'">
-- END_ELEMENT <DOM Element: First_Name at 0x7fd87e1850d0>
+- END_ELEMENT <DOM Element: First_Name at 0x7f63738e50d0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'          '...">
-- START_ELEMENT <DOM Element: Last_Name at 0x7fd87e185160>
+- START_ELEMENT <DOM Element: Last_Name at 0x7f63738e5160>
 - CHARACTERS <DOM Text node "'Widom'">
-- END_ELEMENT <DOM Element: Last_Name at 0x7fd87e185160>
+- END_ELEMENT <DOM Element: Last_Name at 0x7f63738e5160>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'         '">
-- END_ELEMENT <DOM Element: Author at 0x7fd87e185040>
+- END_ELEMENT <DOM Element: Author at 0x7f63738e5040>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'      '">
-- END_ELEMENT <DOM Element: Authors at 0x7fd87e179f70>
+- END_ELEMENT <DOM Element: Authors at 0x7f63738d9f70>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- END_ELEMENT <DOM Element: Book at 0x7fd87e179e50>
+- END_ELEMENT <DOM Element: Book at 0x7f63738d9e50>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- START_ELEMENT <DOM Element: Magazine at 0x7fd87e1851f0>
+- START_ELEMENT <DOM Element: Magazine at 0x7f63738e51f0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'       '">
-- START_ELEMENT <DOM Element: Title at 0x7fd87e185280>
+- START_ELEMENT <DOM Element: Title at 0x7f63738e5280>
 - CHARACTERS <DOM Text node "'National G'...">
-- END_ELEMENT <DOM Element: Title at 0x7fd87e185280>
+- END_ELEMENT <DOM Element: Title at 0x7f63738e5280>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- END_ELEMENT <DOM Element: Magazine at 0x7fd87e1851f0>
+- END_ELEMENT <DOM Element: Magazine at 0x7f63738e51f0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- START_ELEMENT <DOM Element: Magazine at 0x7fd87e185310>
+- START_ELEMENT <DOM Element: Magazine at 0x7f63738e5310>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'       '">
-- START_ELEMENT <DOM Element: Title at 0x7fd87e1853a0>
+- START_ELEMENT <DOM Element: Title at 0x7f63738e53a0>
 - CHARACTERS <DOM Text node "'National G'...">
-- END_ELEMENT <DOM Element: Title at 0x7fd87e1853a0>
+- END_ELEMENT <DOM Element: Title at 0x7f63738e53a0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- END_ELEMENT <DOM Element: Magazine at 0x7fd87e185310>
+- END_ELEMENT <DOM Element: Magazine at 0x7f63738e5310>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- START_ELEMENT <DOM Element: Magazine at 0x7fd87e185430>
+- START_ELEMENT <DOM Element: Magazine at 0x7f63738e5430>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'       '">
-- START_ELEMENT <DOM Element: Title at 0x7fd87e1854c0>
+- START_ELEMENT <DOM Element: Title at 0x7f63738e54c0>
 - CHARACTERS <DOM Text node "'Newsweek'">
-- END_ELEMENT <DOM Element: Title at 0x7fd87e1854c0>
+- END_ELEMENT <DOM Element: Title at 0x7f63738e54c0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- END_ELEMENT <DOM Element: Magazine at 0x7fd87e185430>
+- END_ELEMENT <DOM Element: Magazine at 0x7f63738e5430>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- START_ELEMENT <DOM Element: Magazine at 0x7fd87e185550>
+- START_ELEMENT <DOM Element: Magazine at 0x7f63738e5550>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'       '">
-- START_ELEMENT <DOM Element: Title at 0x7fd87e1855e0>
+- START_ELEMENT <DOM Element: Title at 0x7f63738e55e0>
 - CHARACTERS <DOM Text node "'Hector and'...">
-- END_ELEMENT <DOM Element: Title at 0x7fd87e1855e0>
+- END_ELEMENT <DOM Element: Title at 0x7f63738e55e0>
 - CHARACTERS <DOM Text node "'\n'">
 - CHARACTERS <DOM Text node "'   '">
-- END_ELEMENT <DOM Element: Magazine at 0x7fd87e185550>
+- END_ELEMENT <DOM Element: Magazine at 0x7f63738e5550>
 - CHARACTERS <DOM Text node "'\n'">
-- END_ELEMENT <DOM Element: Bookstore at 0x7fd87ea921f0>
+- END_ELEMENT <DOM Element: Bookstore at 0x7f63741f21f0>
 ```
 
 
 # XPath
 
-Path expressions + conditions  
+Path expressions + conditions
 
 -   XML is a tree
 
@@ -995,30 +995,30 @@ print(tree.xpath(
 ```
 
 ```
-[<Element Title at 0x7fede9cb9780>, <Element Title at 0x7fede9cb97c0>, <Element Title at 0x7fede9cb9800>, <Element Title at 0x7fede9cb9840>]
-[<Element Title at 0x7fede9cb9780>, <Element Title at 0x7fede9cb9880>, <Element Title at 0x7fede9cb97c0>, <Element Title at 0x7fede9cb9740>, <Element Title at 0x7fede9cb9800>, <Element Title at 0x7fede9cb9840>, <Element Title at 0x7fede9cb9900>, <Element Title at 0x7fede9cb9940>]
-[<Element Title at 0x7fede9cb9780>, <Element Title at 0x7fede9cb9980>, <Element Title at 0x7fede9cb9880>, <Element Title at 0x7fede9cb99c0>, <Element Title at 0x7fede9cb97c0>, <Element Title at 0x7fede9cb9740>, <Element Title at 0x7fede9cb9a40>, <Element Title at 0x7fede9cb9800>]
-[<Element Title at 0x7fede9cb9a00>, <Element Title at 0x7fede9cb9780>, <Element Title at 0x7fede9cb98c0>, <Element Title at 0x7fede9cb9980>, <Element Title at 0x7fede9cb9a80>, <Element Title at 0x7fede9cb9840>, <Element Title at 0x7fede9cb99c0>, <Element Title at 0x7fede9cb9ac0>]
-[<Element Bookstore at 0x7fedea796540>, <Element Book at 0x7fede9cb9880>, <Element Title at 0x7fede9cb9a00>, <Element Authors at 0x7fede9cb97c0>, <Element Author at 0x7fede9cb9780>, <Element First_Name at 0x7fede9cb98c0>, <Element Last_Name at 0x7fede9cb9740>, <Element Author at 0x7fede9cb9980>, <Element First_Name at 0x7fede9cb9b00>, <Element Last_Name at 0x7fede9cb9900>, <Element Book at 0x7fede9cb9a80>, <Element Title at 0x7fede9cb9a40>, <Element Authors at 0x7fede9cb9840>, <Element Author at 0x7fede9cb9940>, <Element First_Name at 0x7fede9cb99c0>, <Element Last_Name at 0x7fede9cb9800>, <Element Author at 0x7fede9cb9ac0>, <Element First_Name at 0x7fede9cb9b40>, <Element Last_Name at 0x7fede9cb9b80>, <Element Author at 0x7fede9cb9bc0>, <Element First_Name at 0x7fede9cb9c00>, <Element Last_Name at 0x7fede9cb9c40>, <Element Remark at 0x7fede9cb9c80>, <Element Book at 0x7fede9cb9cc0>, <Element Title at 0x7fede9cb9d00>, <Element Authors at 0x7fede9cb9d40>, <Element Author at 0x7fede9cb9d80>, <Element First_Name at 0x7fede9cb9dc0>, <Element Last_Name at 0x7fede9cb9e00>, <Element Author at 0x7fede9cb9e40>, <Element First_Name at 0x7fede9cb9e80>, <Element Last_Name at 0x7fede9cb9ec0>, <Element Remark at 0x7fede9cb9f00>, <Element Book at 0x7fede9cb9f40>, <Element Title at 0x7fede9cb9f80>, <Element Authors at 0x7fede9cb9fc0>, <Element Author at 0x7fede9cba040>, <Element First_Name at 0x7fede9cba080>, <Element Last_Name at 0x7fede9cba0c0>, <Element Magazine at 0x7fede9cba100>, <Element Title at 0x7fede9cba140>, <Element Magazine at 0x7fede9cba180>, <Element Title at 0x7fede9cba1c0>, <Element Magazine at 0x7fede9cba200>, <Element Title at 0x7fede9cba240>, <Element Magazine at 0x7fede9cba280>, <Element Title at 0x7fede9cba2c0>]
+[<Element Title at 0x7f9b3a77d940>, <Element Title at 0x7f9b3a77d980>, <Element Title at 0x7f9b3a77d9c0>, <Element Title at 0x7f9b3a77da00>]
+[<Element Title at 0x7f9b3a77d940>, <Element Title at 0x7f9b3a77da40>, <Element Title at 0x7f9b3a77d980>, <Element Title at 0x7f9b3a77d900>, <Element Title at 0x7f9b3a77d9c0>, <Element Title at 0x7f9b3a77da00>, <Element Title at 0x7f9b3a77dac0>, <Element Title at 0x7f9b3a77db00>]
+[<Element Title at 0x7f9b3a77d940>, <Element Title at 0x7f9b3a77db40>, <Element Title at 0x7f9b3a77da40>, <Element Title at 0x7f9b3a77db80>, <Element Title at 0x7f9b3a77d980>, <Element Title at 0x7f9b3a77d900>, <Element Title at 0x7f9b3a77dc00>, <Element Title at 0x7f9b3a77d9c0>]
+[<Element Title at 0x7f9b3a77dbc0>, <Element Title at 0x7f9b3a77d940>, <Element Title at 0x7f9b3a77da80>, <Element Title at 0x7f9b3a77db40>, <Element Title at 0x7f9b3a77dc40>, <Element Title at 0x7f9b3a77da00>, <Element Title at 0x7f9b3a77db80>, <Element Title at 0x7f9b3a77dc80>]
+[<Element Bookstore at 0x7f9b3b25b4c0>, <Element Book at 0x7f9b3a77da40>, <Element Title at 0x7f9b3a77dbc0>, <Element Authors at 0x7f9b3a77d980>, <Element Author at 0x7f9b3a77d940>, <Element First_Name at 0x7f9b3a77da80>, <Element Last_Name at 0x7f9b3a77d900>, <Element Author at 0x7f9b3a77db40>, <Element First_Name at 0x7f9b3a77dcc0>, <Element Last_Name at 0x7f9b3a77dac0>, <Element Book at 0x7f9b3a77dc40>, <Element Title at 0x7f9b3a77dc00>, <Element Authors at 0x7f9b3a77da00>, <Element Author at 0x7f9b3a77db00>, <Element First_Name at 0x7f9b3a77db80>, <Element Last_Name at 0x7f9b3a77d9c0>, <Element Author at 0x7f9b3a77dc80>, <Element First_Name at 0x7f9b3a77dd00>, <Element Last_Name at 0x7f9b3a77dd40>, <Element Author at 0x7f9b3a77dd80>, <Element First_Name at 0x7f9b3a77ddc0>, <Element Last_Name at 0x7f9b3a77de00>, <Element Remark at 0x7f9b3a77de40>, <Element Book at 0x7f9b3a77de80>, <Element Title at 0x7f9b3a77dec0>, <Element Authors at 0x7f9b3a77df00>, <Element Author at 0x7f9b3a77df40>, <Element First_Name at 0x7f9b3a77df80>, <Element Last_Name at 0x7f9b3a77dfc0>, <Element Author at 0x7f9b3a77f040>, <Element First_Name at 0x7f9b3a77f080>, <Element Last_Name at 0x7f9b3a77f0c0>, <Element Remark at 0x7f9b3a77f100>, <Element Book at 0x7f9b3a77f140>, <Element Title at 0x7f9b3a77f180>, <Element Authors at 0x7f9b3a77f1c0>, <Element Author at 0x7f9b3a77f200>, <Element First_Name at 0x7f9b3a77f240>, <Element Last_Name at 0x7f9b3a77f280>, <Element Magazine at 0x7f9b3a77f2c0>, <Element Title at 0x7f9b3a77f300>, <Element Magazine at 0x7f9b3a77f340>, <Element Title at 0x7f9b3a77f380>, <Element Magazine at 0x7f9b3a77f3c0>, <Element Title at 0x7f9b3a77f400>, <Element Magazine at 0x7f9b3a77f440>, <Element Title at 0x7f9b3a77f480>]
 ['ISBN-0-13-713526-2', 'ISBN-0-13-815504-6', 'ISBN-0-11-222222-3', 'ISBN-9-88-777777-6']
-[<Element Book at 0x7fede9cb97c0>, <Element Book at 0x7fede9cb9780>, <Element Book at 0x7fede9cb98c0>]
-[<Element Title at 0x7fede9cb97c0>, <Element Title at 0x7fede9cb9740>, <Element Title at 0x7fede9cb9780>]
-[<Element Title at 0x7fede9cb98c0>, <Element Title at 0x7fede9cb9740>]
-[<Element Title at 0x7fede9cb98c0>, <Element Title at 0x7fede9cb9a00>]
-[<Element Title at 0x7fede9cb98c0>, <Element Title at 0x7fede9cb97c0>]
-[<Element Title at 0x7fede9cb98c0>]
-[<Element Title at 0x7fede9cb98c0>, <Element Title at 0x7fede9cb97c0>]
-[<Element Title at 0x7fede9cb98c0>, <Element Title at 0x7fede9cb9a00>, <Element Title at 0x7fede9cb97c0>]
-[<Element Author at 0x7fede9cb9780>, <Element Author at 0x7fede9cb9a00>, <Element Author at 0x7fede9cb9740>]
-[<Element Author at 0x7fede9cb97c0>]
+[<Element Book at 0x7f9b3a77d980>, <Element Book at 0x7f9b3a77d940>, <Element Book at 0x7f9b3a77da80>]
+[<Element Title at 0x7f9b3a77d980>, <Element Title at 0x7f9b3a77d900>, <Element Title at 0x7f9b3a77d940>]
+[<Element Title at 0x7f9b3a77da80>, <Element Title at 0x7f9b3a77d900>]
+[<Element Title at 0x7f9b3a77da80>, <Element Title at 0x7f9b3a77dbc0>]
+[<Element Title at 0x7f9b3a77da80>, <Element Title at 0x7f9b3a77d980>]
+[<Element Title at 0x7f9b3a77da80>]
+[<Element Title at 0x7f9b3a77da80>, <Element Title at 0x7f9b3a77d980>]
+[<Element Title at 0x7f9b3a77da80>, <Element Title at 0x7f9b3a77dbc0>, <Element Title at 0x7f9b3a77d980>]
+[<Element Author at 0x7f9b3a77d940>, <Element Author at 0x7f9b3a77dbc0>, <Element Author at 0x7f9b3a77d900>]
+[<Element Author at 0x7f9b3a77d980>]
 []
-[<Element Title at 0x7fede9cb9a00>]
-[<Element Magazine at 0x7fede9cb9a00>]
-[<Element Author at 0x7fede9cb9a00>, <Element First_Name at 0x7fede9cb9780>, <Element Last_Name at 0x7fede9cb98c0>, <Element Author at 0x7fede9cb9740>, <Element First_Name at 0x7fede9cb9980>, <Element Last_Name at 0x7fede9cb9900>, <Element Author at 0x7fede9cb9880>, <Element First_Name at 0x7fede9cb9a80>, <Element Last_Name at 0x7fede9cb9a40>, <Element Author at 0x7fede9cb9b00>, <Element First_Name at 0x7fede9cb9840>, <Element Last_Name at 0x7fede9cb9940>, <Element Author at 0x7fede9cb99c0>, <Element First_Name at 0x7fede9cb9800>, <Element Last_Name at 0x7fede9cb9ac0>, <Element Author at 0x7fede9cb9b40>, <Element First_Name at 0x7fede9cb9b80>, <Element Last_Name at 0x7fede9cb9bc0>, <Element Author at 0x7fede9cb9c00>, <Element First_Name at 0x7fede9cb9c40>, <Element Last_Name at 0x7fede9cb9c80>, <Element Author at 0x7fede9cb9cc0>, <Element First_Name at 0x7fede9cb9d00>, <Element Last_Name at 0x7fede9cb9d40>, <Element Title at 0x7fede9cb9d80>, <Element Title at 0x7fede9cb9dc0>, <Element Title at 0x7fede9cb9e00>, <Element Title at 0x7fede9cb9e40>]
+[<Element Title at 0x7f9b3a77dbc0>]
+[<Element Magazine at 0x7f9b3a77dbc0>]
+[<Element Author at 0x7f9b3a77dbc0>, <Element First_Name at 0x7f9b3a77d940>, <Element Last_Name at 0x7f9b3a77da80>, <Element Author at 0x7f9b3a77d900>, <Element First_Name at 0x7f9b3a77db40>, <Element Last_Name at 0x7f9b3a77dac0>, <Element Author at 0x7f9b3a77da40>, <Element First_Name at 0x7f9b3a77dc40>, <Element Last_Name at 0x7f9b3a77dc00>, <Element Author at 0x7f9b3a77dcc0>, <Element First_Name at 0x7f9b3a77da00>, <Element Last_Name at 0x7f9b3a77db00>, <Element Author at 0x7f9b3a77db80>, <Element First_Name at 0x7f9b3a77d9c0>, <Element Last_Name at 0x7f9b3a77dc80>, <Element Author at 0x7f9b3a77dd00>, <Element First_Name at 0x7f9b3a77dd40>, <Element Last_Name at 0x7f9b3a77dd80>, <Element Author at 0x7f9b3a77ddc0>, <Element First_Name at 0x7f9b3a77de00>, <Element Last_Name at 0x7f9b3a77de40>, <Element Author at 0x7f9b3a77de80>, <Element First_Name at 0x7f9b3a77dec0>, <Element Last_Name at 0x7f9b3a77df00>, <Element Title at 0x7f9b3a77df40>, <Element Title at 0x7f9b3a77df80>, <Element Title at 0x7f9b3a77dfc0>, <Element Title at 0x7f9b3a77f500>]
 []
-[<Element Book at 0x7fede9cb9e80>, <Element Magazine at 0x7fede9cb9780>, <Element Magazine at 0x7fede9cb9ec0>, <Element Magazine at 0x7fede9cb98c0>]
-[<Element Book at 0x7fede9cb9e80>, <Element Book at 0x7fede9cb9740>]
-[<Element Title at 0x7fede9cb9e80>]
+[<Element Book at 0x7f9b3a77d940>, <Element Magazine at 0x7f9b3a77da80>, <Element Magazine at 0x7f9b3a77d900>, <Element Magazine at 0x7f9b3a77db40>]
+[<Element Book at 0x7f9b3a77d940>, <Element Book at 0x7f9b3a77da40>]
+[<Element Title at 0x7f9b3a77d940>]
 ```
 
 
