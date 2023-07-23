@@ -1,0 +1,26 @@
+* Non-valid HTML
+  #+NAME: non_valid_html
+  #+begin_src html :exports code
+    <!doctype html>
+    <html>
+      Hello, world!
+    </html>
+  #+end_src
+  [[file:non_valid_html.png]]
+* DOM manipulations
+  #+begin_src javascript :exports code
+    var newParagraph = document.createElement("p");
+    var paragraphContent = document.createTextNode("I'm new!");
+    newParagraph.appendChild(paragraphContent);
+    document.body.appendChild(newParagraph);
+  #+end_src
+* DOM events
+  [[file:dom.jpg]]
+* DOM in Python
+  #+begin_src python :exports both :results output list
+    from xml.dom.minidom import parse
+
+    dom = parse("BookstoreQ.xml")
+    for book in dom.getElementsByTagName("Book"):
+        print(book.getAttribute("ISBN"))
+  #+end_src

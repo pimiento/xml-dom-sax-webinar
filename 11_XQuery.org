@@ -1,0 +1,31 @@
+* Простой пример
+  #+begin_src shell :exports both :results output
+    sudo apt-get install -y basex 2>/dev/null 1>/dev/null
+    QUERY='
+    for $b in /Bookstore/Book
+      where $b/@Price < 90 and $b/Authors/Author/Last_Name != "Ullman"
+        return $b/Title
+    '
+    basex -i BookstoreQ.xml ${QUERY}
+  #+end_src
+
+* Пример поинтереснее
+  #+begin_src shell :exports both :results output
+    QUERY='<InvertedBookstore>
+    { for $ln in distinct-values(//Author/Last_Name)
+                 for $fn in distinct-values(//Author[
+                                                Last_Name=$ln]/First_Name)
+                            return
+                            <Author>
+                            <First_Name> { $fn } </First_Name>
+                            <Last_Name> { $ln } </Last_Name>
+                            { for $b in /Bookstore/Book[
+                                             Authors/Author/Last_Name = $ln]
+                                        return <Book>
+                                        { $b/@ISBN } { $b/@Price } { $b/@Edition }
+                                        { $b/Title } {$b/Remark }
+                                        </Book> }
+                            </Author> }
+    </InvertedBookstore>'
+    basex -i BookstoreQ.xml ${QUERY}
+  #+end_src

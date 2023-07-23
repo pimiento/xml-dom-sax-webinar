@@ -1,0 +1,47 @@
+* Example
+  #+begin_src html :tangle example.html
+    <body>
+      <h1 class="highlight">Class selectors</h1>
+      <p>Veggies es bonus vobis, proinde vos postulo essum magis <span class="highlight">kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo
+        melon azuki bean garlic.</p>
+
+      <p class="highlight">Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+        greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+      <h1 id="heading">ID selector</h1>
+      <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+        melon azuki bean garlic.</p>
+
+      <p id="one">Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+        greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+      <ul>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+      </ul>
+    </body>
+  #+end_src
+  #+begin_src python :exports both :results output
+    from bs4 import BeautifulSoup as bs
+
+    with open("example.html", "r") as fd:
+        soup = bs(fd.read())
+
+    # select class
+    print(soup.select(".highlight"))
+    # tree.xpath("//*[@class='highlight']")
+    print(soup.select("h1.highlight"))
+    # tree.xpath("//h1[@class='highlight']")
+    # select ID
+    print(soup.select("#heading"))
+    # tree.xpath("//*[@id='heading']")
+    print(soup.select("h1#heading"))
+    # tree.xpath("//h1[@id='heading']")
+    # select by attrs
+    print(soup.select("[class]"))
+    # tree.xpath("//*[@class]")
+    print(soup.select("[href]"))
+    # tree.xpath("//*[@href]")
+    print(soup.select('[href="#internal"]'))
+    # tree.xpath("//*[@href='#internal']")
+  #+end_src

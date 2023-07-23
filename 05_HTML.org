@@ -1,0 +1,29 @@
+| DTD                                                                                                                | Описание                                           |
+|--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------|
+| <!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01//EN" "www.w3.org/TR/html4/strict.dtd">                               | Строгий синтаксис HTML.                            |
+| <!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01 Transitional//EN" "www.w3.org/TR/html4/loose.dtd">                   | Переходный синтаксис HTML.                         |
+| <!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01 Frameset//EN" "www.w3.org/TR/html4/frameset.dtd">                    | В HTML-документе применяются фреймы.               |
+|--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------|
+| <!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">            | Строгий синтаксис XHTML.                           |
+| <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> | Переходный синтаксис XHTML.                        |
+| <!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Frameset//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">        | Документ написан на XHTML и содержит фреймы.       |
+|--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------|
+| <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">                         | Никакого деления на виды это определение не имеет, |
+|                                                                                                                    | синтаксис один и подчиняется четким правилам.      |
+|--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------|
+| <!DOCTYPE html>                                                                                                    | HTML5. Забудьте всё что было до!                   |
+
+#+begin_src html :exports code
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8"/>
+    </head>
+    <body style="bgcolor:'red'">
+
+      <h1 class="header">My First Heading</h1>
+      <p id="first-p">My first paragraph.</p>
+
+    </body>
+  </html>
+#+end_src

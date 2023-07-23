@@ -1,0 +1,28 @@
+* SAX parser
+  PUSH-парсер
+  #+begin_src python :exports both :results output list
+    from xml.sax import parse
+    from xml.sax.handler import ContentHandler
+
+    class MyHandler(ContentHandler):
+
+        def startElement(self, name, attrs):
+            print(f"BEGIN: <{name}>, {attrs.keys()}")
+
+        def endElement(self, name):
+            print(f"END: </{name}>")
+
+        def characters(self, content):
+            if content.strip() != "":
+                print("CONTENT:", repr(content))
+
+    dom = parse("BookstoreQ.xml", MyHandler())
+  #+end_src
+* StAX parser
+  PULL-парсер
+  #+begin_src python :exports both :results output list
+    from xml.dom.pulldom import parse
+    event_stream = parse("BookstoreQ.xml")
+    for event, node in event_stream:
+        print(event, node)
+  #+end_src

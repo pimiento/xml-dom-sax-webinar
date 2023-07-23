@@ -1,0 +1,8 @@
+* Дополнительно почитать
+  - [[http://infolab.stanford.edu/~ullman/dscb.html][Hector Garcia-Molina, Ullman, Widom. Database Systems: The Complete Book]]
+  - [[https://habr.com/ru/articles/469995/][SAX vs DOM в Python]]
+  - [[https://realpython.com/python-xml-parser/][Python XML parsers]]
+  - [[https://lxml.de/xpathxslt.html][LXML]]
+  - [[https://docs-python.ru/packages/paket-beautifulsoup4-python/css-selektory/][CSS селекторы в BS4]]
+  - [[https://learn.jquery.com/using-jquery-core/selecting-elements/][CSSSelectors in JQuery]]
+  - [[https://www.dropbox.com/s/7b6nztwjra8jm6y/selenium-grading.pdf?dl=0][CSSSelector vs XPath (pp18-23)]]
