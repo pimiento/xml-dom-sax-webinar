@@ -1,6 +1,8 @@
+-
+- DOM :: Document Object Model
 * Non-valid HTML
   #+NAME: non_valid_html
-  #+begin_src html :exports code
+  #+begin_src html :exports code :tangle non_valid.html
     <!doctype html>
     <html>
       Hello, world!
@@ -24,3 +26,9 @@
     for book in dom.getElementsByTagName("Book"):
         print(book.getAttribute("ISBN"))
   #+end_src
+
+  #+RESULTS:
+  : - ISBN-0-13-713526-2
+  : - ISBN-0-13-815504-6
+  : - ISBN-0-11-222222-3
+  : - ISBN-9-88-777777-6

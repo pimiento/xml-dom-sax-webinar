@@ -17,7 +17,7 @@
   ]>
 #+end_src
 
-#+begin_src xml :noweb tangle :tangle Bookstore-DTD.xml
+#+begin_src xml :noweb yes :tangle Bookstore-DTD.xml
   <?xml version="1.0" ?>
   <<dtd>>
 
@@ -58,7 +58,7 @@
   </Bookstore>
 #+end_src
 
-#+begin_src shell :exports both
+#+begin_src shell :exports both :results output raw
   apt install libxml2-utils 1>/dev/null 2>/dev/null
   xmllint --valid --noout Bookstore-DTD.xml 2>&1 || echo ""
 #+end_src
